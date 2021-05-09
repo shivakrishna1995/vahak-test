@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,4 +11,23 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+
+    .title{
+        padding: 37px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        .content{
+            font-family: 'Nunito', sans-serif;
+            font-size: 24px;
+            color: #0A2239;
+            font-weight: bold;
+        }
+        .titleDivider{
+            width: 70px;
+            height: 4px;
+            background-color: #3054D6;
+        }
+    }
 }
