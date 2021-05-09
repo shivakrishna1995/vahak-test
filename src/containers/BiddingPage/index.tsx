@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
-import { Header, BiddingCard, Button } from '../../components';
+import { Header, BiddingCard, Button, Card } from '../../components';
+
 import './index.scss';
 
 interface IBiddingPageState {
