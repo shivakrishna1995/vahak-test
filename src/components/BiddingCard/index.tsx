@@ -18,7 +18,7 @@ let amountChars = 0;
 export const BiddingCard: FC<IBiddingCard> = ({ onChange, formData }) => {
     const [width, setWidth] = useState(40)
     const [focusedInput, setFocusedInput] = useState("mobile")
-    const { priceType, mobile, name, remarks } = formData;
+    const { priceType, name, remarks } = formData;
 
     return <div id="biddingCard">
         <div className="biddingCardHeader">

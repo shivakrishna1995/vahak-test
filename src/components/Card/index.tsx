@@ -15,24 +15,24 @@ export const Card: FC = () => {
         <div className="cardContent">
             <div className="specifications">
                 <div className="specification">
-                    <img src={Icon} width={11.41} height={13} style={{ marginRight: 19.59 }} />
+                    <img alt="." src={Icon} width={11.41} height={13} style={{ marginRight: 19.59 }} />
                     <div className="description">Specification 01</div>
                 </div>
                 <div className="specification">
-                    <img src={Icon1} width={17.77} height={10} style={{ marginRight: 13.23 }} />
+                    <img alt="." src={Icon1} width={17.77} height={10} style={{ marginRight: 13.23 }} />
                     <div className="description">Specification 02</div>
                 </div>
                 <div className="specification">
-                    <img src={Icon2} width={14.44} height={10} style={{ marginRight: 16.56 }} />
+                    <img alt="." src={Icon2} width={14.44} height={10} style={{ marginRight: 16.56 }} />
                     <div className="description">Specification 03</div>
                 </div>
             </div>
             <div className="moreDetails">
                 <div className="content">More Details</div>
-                <img src={MoreIcon} width={10} height={5.75} />
+                <img alt="." src={MoreIcon} width={10} height={5.75} />
             </div>
             <div className="cardFooter">
-                <img src={ProfileIcon} width={36} height={36} />
+                <img alt="." src={ProfileIcon} width={36} height={36} />
                 <div className="content">
                     <div className="name">
                         Rohan Sharma
