@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+#biddingCard{
+    margin: 0px 20px 22.17px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #0A22391F;
+    border-radius: 6px;
+    padding: 20px 0px 30.5px 0px;
+    display: flex;
+    flex-direction: column;
+    .biddingCardHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .biddingCardHeaderTitle{
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #0A2239;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .divider{
+            width: 60px;
+            height: 3px;
+            background-color: #3054D6;
+            margin-bottom: 24px;
+        }
+        .biddingCardAmount{
+            display: flex;
+            gap: 7px;
+            align-items: center;
+            margin-bottom: 8px;
+            .biddingCardAmountSymbol{
+                font-size: 48px;
+                color: #0D2D11;
+                font-family: 'Roboto', sans-serif;
+            }
+            .biddingCardAmountContent{
+                flex: 1;
+                letter-spacing: -1px;
+                color: #0D2D11;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                max-width: 90%;
+                overflow: hidden;
+                outline: none;
+                border: none;
+                font-size: 50px;
+            }
+        }
+        .biddingCardHeaderActions{
+            display: flex;
+            gap: 8px;
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 30.05px;
+            >div{
+                padding: 9px 16px;
+                border-radius: 18px;
+                font-size: 13px;
+                font-weight: 700;
+            }
+            .biddingCardHeaderActionsActive{
+                background-color: #3054D60F;
+                border: 1px solid #3054D6;
+                color: #3054D6;
+                letter-spacing: -0.13px;
+            }
+            .biddingCardHeaderActionsInactive{
+                background-color: #F6F9FB80;
+                border: 1px solid #E7EBEE;
+                color: #0A2239;
+                opacity: 0.6;
+            }
+        }
+    }
+    .biddingCardHorizontalLine{
+        border: 1px solid #E7EBEE;
+        margin-bottom: 31.05px;
+    }
+    .biddingCardForm{
+        padding: 0px 16px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        .activeInput{
+            height: 50px;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            border: 1px solid #3054D6;
+            position: relative;
+            padding: 0px 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            >:nth-child(-n+2){
+                font-size: 14px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+            }
+            .bcfiPlaceholder{
+                position: absolute;
+                top: -10px;
+                left: 8px;
+                background-color: white;
+                color: #3054D6;
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+                padding: 0px 6px;
+            }
+            >input{
+                border: none;
+                outline: none;
+                z-index: 10;
+                background-color: transparent;
+            }
+        }
+
+        .inactiveInput{
+            height: 50px;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            border: 1px solid #E7EBEEB3;
+            position: relative;
+            padding: 0px 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            >:nth-child(-n+2){
+                font-size: 14px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+            }
+            .bcfiPlaceholder{
+                position: absolute;
+                left: 8px;
+                background-color: white;
+                color: #0D0D0F;
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+                padding: 0px 6px;
+                opacity: 0.5;
+                z-index: 0;
+            }
+            >input{
+                border: none;
+                outline: none;
+                z-index: 10;
+                background-color: transparent;
+            }
+        }
+    }
+}
