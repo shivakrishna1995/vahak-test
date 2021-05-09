@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Header } from '../../components';
+import { Header, BiddingCard } from '../../components';
 import './index.scss';
 
 export const BiddingPage: FC = () => {
@@ -9,5 +9,6 @@ export const BiddingPage: FC = () => {
             <div className="content">Old Car Available</div>
             <div className="titleDivider" />
         </div>
+        <BiddingCard />
     </div>
 }

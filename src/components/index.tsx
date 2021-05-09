@@ -1,3 +1,4 @@
 import { Header } from './Header';
+import { BiddingCard } from './BiddingCard';
 
-export { Header }
+export { Header, BiddingCard }
