@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/metropolis-2');
+.card{
+    height: 296px;
+    border-radius: 6px;
+    margin: 0px 20px 30px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #0A22391F;
+    box-shadow: 0px 0px 30px #90909066;
+    display: flex;
+    flex-direction: column;
+    .cardHeader{
+        height: 82px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background-color: #202942;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        .cardHeaderTitle{
+            font-size: 16px;
+            color: #FFFFFF;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+        .cardHeaderDate{
+            font-size: 13px;
+            color: #8492A6;
+            letter-spacing: .13px;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .specifications{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            .specification{
+                display: flex;
+                align-items: center;
+                .description{
+                    font-size: 15px;
+                    color: #0A2239;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+        .moreDetails{
+            height: 26px;
+            background-color: #2355FC0F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            .content{
+                font-size: 12px;
+                letter-spacing: -0.12;
+                color: #194DFF;
+                opacity: 0.9;
+                font-family: 'Metropolis', sans-serif;
+                font-weight: 500;
+            }
+        }
+        .cardFooter{
+            display: flex;
+            flex: 1;
+            padding: 0px 20px;
+            gap: 12px;
+            align-items: center;
+            .content{
+                .name{
+                    font-size: 15px;
+                    letter-spacing: -0.15px;
+                    color: #0A2239;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 700;
+                }
+                .location{
+                    font-size: 13px;
+                    letter-spacing: -0.13px;
+                    color: #8492A6;
+                    font-family: 'Nunito', sans-serif;
+                }
+            }
+        }
+    }
+}
