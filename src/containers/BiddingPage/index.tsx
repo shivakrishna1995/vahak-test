@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Header, BiddingCard, Button } from '../../components';
+import { Header, BiddingCard, Button, Card } from '../../components';
 import './index.scss';
 
 interface IBiddingPageState {
@@ -27,6 +27,7 @@ export const BiddingPage: FC = () => {
             <div className="content">Old Car Available</div>
             <div className="titleDivider" />
         </div>
+        <Card />
         <BiddingCard onChange={onChange} formData={formData} />
         <Button active={Object.values(formData).findIndex(data => data.length === 0) === -1} />
     </div>
