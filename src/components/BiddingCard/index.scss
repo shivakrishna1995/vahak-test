@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 #biddingCard{
-    height: 505.83px;
     margin: 0px 20px 22.17px 20px;
     background-color: #FFFFFF;
     border: 1px solid #0A22391F;
@@ -28,7 +27,7 @@
         }
         .biddingCardAmount{
             display: flex;
-            gap: 7;
+            gap: 7px;
             align-items: center;
             margin-bottom: 8px;
             .biddingCardAmountSymbol{
@@ -37,11 +36,16 @@
                 font-family: 'Roboto', sans-serif;
             }
             .biddingCardAmountContent{
-                font-size: 50px;
+                flex: 1;
                 letter-spacing: -1px;
                 color: #0D2D11;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 700;
+                max-width: 90%;
+                overflow: hidden;
+                outline: none;
+                border: none;
+                font-size: 50px;
             }
         }
         .biddingCardHeaderActions{
@@ -71,6 +75,84 @@
     }
     .biddingCardHorizontalLine{
         border: 1px solid #E7EBEE;
-        margin-bottom: 31.05;
+        margin-bottom: 31.05px;
+    }
+    .biddingCardForm{
+        padding: 0px 16px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        .activeInput{
+            height: 50px;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            border: 1px solid #3054D6;
+            position: relative;
+            padding: 0px 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            >:nth-child(-n+2){
+                font-size: 14px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+            }
+            .bcfiPlaceholder{
+                position: absolute;
+                top: -10px;
+                left: 8px;
+                background-color: white;
+                color: #3054D6;
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+                padding: 0px 6px;
+            }
+            >input{
+                border: none;
+                outline: none;
+                z-index: 10;
+                background-color: transparent;
+            }
+        }
+
+        .inactiveInput{
+            height: 50px;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            border: 1px solid #E7EBEEB3;
+            position: relative;
+            padding: 0px 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            >:nth-child(-n+2){
+                font-size: 14px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+            }
+            .bcfiPlaceholder{
+                position: absolute;
+                left: 8px;
+                background-color: white;
+                color: #0D0D0F;
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                font-family: 'Nunito', sans-serif;
+                font-weight: bold;
+                padding: 0px 6px;
+                opacity: 0.5;
+                z-index: 0;
+            }
+            >input{
+                border: none;
+                outline: none;
+                z-index: 10;
+                background-color: transparent;
+            }
+        }
     }
 }
