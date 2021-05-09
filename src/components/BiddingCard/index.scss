@@ -1,7 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 #biddingCard{
     height: 505.83px;
     margin: 0px 20px 22.17px 20px;
     background-color: #FFFFFF;
     border: 1px solid #0A22391F;
     border-radius: 6px;
+    padding: 20px 0px 30.5px 0px;
+    display: flex;
+    flex-direction: column;
+    .biddingCardHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .biddingCardHeaderTitle{
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #0A2239;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .divider{
+            width: 60px;
+            height: 3px;
+            background-color: #3054D6;
+            margin-bottom: 24px;
+        }
+        .biddingCardAmount{
+            display: flex;
+            gap: 7;
+            align-items: center;
+            margin-bottom: 8px;
+            .biddingCardAmountSymbol{
+                font-size: 48px;
+                color: #0D2D11;
+                font-family: 'Roboto', sans-serif;
+            }
+            .biddingCardAmountContent{
+                font-size: 50px;
+                letter-spacing: -1px;
+                color: #0D2D11;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+            }
+        }
+        .biddingCardHeaderActions{
+            display: flex;
+            gap: 8px;
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 30.05px;
+            >div{
+                padding: 9px 16px;
+                border-radius: 18px;
+                font-size: 13px;
+                font-weight: 700;
+            }
+            .biddingCardHeaderActionsActive{
+                background-color: #3054D60F;
+                border: 1px solid #3054D6;
+                color: #3054D6;
+                letter-spacing: -0.13px;
+            }
+            .biddingCardHeaderActionsInactive{
+                background-color: #F6F9FB80;
+                border: 1px solid #E7EBEE;
+                color: #0A2239;
+                opacity: 0.6;
+            }
+        }
+    }
+    .biddingCardHorizontalLine{
+        border: 1px solid #E7EBEE;
+        margin-bottom: 31.05;
+    }
 }
